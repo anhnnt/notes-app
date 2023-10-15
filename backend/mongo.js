@@ -21,13 +21,14 @@ const noteSchema = new mongoose.Schema({
 
 const Note = mongoose.model('Note', noteSchema)
 
+// eslint-disable-next-line no-unused-vars
 const note = new Note({
   content: 'Mongoose makes things easy',
   date: new Date(),
   important: true
 })
 
-{/* 
+{/*
 note.save().then(result => {
   console.log('note saved!')
   mongoose.connection.close()
@@ -35,8 +36,8 @@ note.save().then(result => {
  */}
 
 Note.find({}).then(result => {
-    result.forEach(note => {
-        console.log(note)
-    })
-    mongoose.connection.close()
+  result.forEach(note => {
+    console.log(note)
+  })
+  mongoose.connection.close()
 })
