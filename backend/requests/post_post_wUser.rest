@@ -1,0 +1,8 @@
+POST http://localhost:3001/api/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFuaG5nIiwiaWQiOiI2NTQ2MGRiZjdiMGRhNThiZWNlZjk4MTMiLCJpYXQiOjE2OTk0MzY3NjV9.NBJgP8O48IAPJZx397vC3L_hriWoaIhFiJfcodKF97w
+
+{
+    "content": "SPA use token authentication",
+    "important": true
+}
